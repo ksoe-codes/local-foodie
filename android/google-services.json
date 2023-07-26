@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "788312756741",
+    "project_id": "localfoodie-fbd5b",
+    "storage_bucket": "localfoodie-fbd5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788312756741:android:fb273f53e118f00ff0826c",
+        "android_client_info": {
+          "package_name": "com.example.local_foodie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "788312756741-dl72scsjvhhb2qr81dn9g1n6u5eavqud.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbh5BFKuOIoALLOCv3y1vBkeu9zgtN57o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "788312756741-dl72scsjvhhb2qr81dn9g1n6u5eavqud.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "788312756741-8pd1a62k8ik7uj5jusebs6ue03888dsg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.localFoodie"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
