@@ -1,19 +1,22 @@
 class User {
   //final int id;
   final String fName;
+  final String lName;
   final String email;
   final String password;
 
   const User(
       { //required this.id,
       required this.fName,
+      required this.lName,
       required this.email,
       required this.password});
 
   Map<String, Object?> toMap() {
     var map = <String, Object?>{
       //'id': id,
-      'name': fName,
+      'fname': fName,
+      'lname': lName,
       'email': email,
       'password': password
     };
@@ -25,6 +28,7 @@ class User {
     return User(
         //id: map['id'],
         fName: map['fName'],
+        lName: map['lName'],
         email: map['email'],
         password: map['password']);
   }

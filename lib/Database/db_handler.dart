@@ -14,7 +14,8 @@ class DatabaseHandler {
         await database.execute('''
       CREATE TABLE User (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT NOT NULL,
+        fname TEXT NOT NULL,
+        lname TEXT NOT NULL,
         email TEXT NOT NULL,
         password TEXT NOT NULL
       )

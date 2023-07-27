@@ -34,6 +34,7 @@ class _SignupScreenState extends State<SignupScreen> {
   Future<int> addUser() async {
     u.User usr = u.User(
         fName: _firstNameController.text,
+        lName: _lastNameController.text,
         email: _emailController.text,
         password: _passwordController.text);
     List<u.User> listOfUser = [];
@@ -118,8 +119,15 @@ class _SignupScreenState extends State<SignupScreen> {
     // Your signup logic here
     // For example, you can use the DatabaseHelper to insert the signup data into the database
     DatabaseHandler().initDB();
+
+    String firstName = _firstNameController.text;
+    String lastName = _lastNameController.text;
+    String email = _emailController.text;
+    String password = _passwordController.text;
+
     List<u.User> users = [
-      u.User(fName: 'sush', email: 'email@hn.com', password: 'password'),
+      u.User(
+          fName: firstName, lName: lastName, email: email, password: password),
       // Add more User instances if needed
     ];
     DatabaseHandler().insertUser(users);
