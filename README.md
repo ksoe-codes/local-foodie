@@ -20,8 +20,4 @@ Home Foodie is a Flutter project that aims to connect food enthusiasts with near
 
 This project serves as the starting point for a Flutter application focused on the Home Foodie App.
 
-### Prerequisites
 
-Before you begin with Flutter development, make sure you have the following installed:
-
-- [Flutter SDK](https://flutter.dev/docs/get-started/install) - Install Flutter on your machine.
