@@ -49,7 +49,7 @@ class _SignupScreenState extends State<SignupScreen> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('New Customer'),
+          title: const Text('New Customer regisration'),
           centerTitle: true,
         ),
         body: Padding(
