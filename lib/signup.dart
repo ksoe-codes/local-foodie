@@ -14,6 +14,26 @@ class SignupScreen extends StatefulWidget {
   _SignupScreenState createState() => _SignupScreenState();
 }
 
+void _showSuccessDialog(BuildContext context) {
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: Text('Success'),
+        content: Text('Successfully signed up!'),
+        actions: <Widget>[
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+            child: Text('OK'),
+          ),
+        ],
+      );
+    },
+  );
+}
+
 class _SignupScreenState extends State<SignupScreen> {
   final TextEditingController _firstNameController = TextEditingController();
   final TextEditingController _lastNameController = TextEditingController();
@@ -131,6 +151,7 @@ class _SignupScreenState extends State<SignupScreen> {
       // Add more User instances if needed
     ];
     DatabaseHandler().insertUser(users);
+    _showSuccessDialog(context);
   }
 }
 
